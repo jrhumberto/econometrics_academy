@@ -73,6 +73,7 @@ coeftest(pm2)
 m1.vcovCL <- cluster.vcov(m1, p_mlda$state)
 
 # compare OLS SE with clustered SE
+# it works, same output as MM in stata
 coeftest(m1)
 coeftest(m1, m1.vcovCL)
 
